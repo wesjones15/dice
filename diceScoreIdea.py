@@ -1,7 +1,4 @@
 def scoreKeeper(quantVals):
-    #global quantDice
-    #global tempTempScore
-    #global tempScore
     tempScore = 0
     
     if quantVals[0] == 1 or quantVals[0] == 2: #rolled one or two 1s
@@ -21,13 +18,6 @@ def scoreKeeper(quantVals):
                     tempScore += tempTempScore
                         
     if quantVals == [1,1,1,1,1,1]: #rolled a straight
-            tempScore += 1500
+            tempScore = 1500
 
-#        threePairs = quantVals #rolled three pairs
-#        while 0 in threePairs:
-#                threePairs.remove(0)
-#        if threePairs == [2,2,2]: 
-#                tempScore += 500
-
-#    print ('(debug) tempScore in sK:',tempScore)                    
     return tempScore
